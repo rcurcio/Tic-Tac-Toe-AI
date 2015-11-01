@@ -2,9 +2,11 @@
 class board
 {
 	private:
-		char square[9];
+		const int WIDTH;
+		const int HEIGHT;
 
 	public:
 		board();
 		void display();
+		void printRow(int offset);
 };
