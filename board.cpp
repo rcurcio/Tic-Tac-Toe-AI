@@ -3,9 +3,7 @@
 using namespace std;
 #include "board.h"
 
-board::board() : WIDTH(8), HEIGHT(5)
-{
-}
+board::board() : WIDTH(8), HEIGHT(5) {}
 
 void board::printRow(int offset)
 {
@@ -28,13 +26,9 @@ void board::display()
 
 	//Dimensions of 1 square 
 	printRow(1);
-
 	cout << setfill('-') << setw(WIDTH * 3) << "-" << endl;
-
 	printRow(4);
-
 	cout << setfill('-') << setw(WIDTH * 3) << "-" << endl;
-
 	printRow(7);
 
 	cout << "\n\n\n";
